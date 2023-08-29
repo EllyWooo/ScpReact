@@ -1,0 +1,36 @@
+/*styles for the Nav component*/
+nav {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    margin-bottom: 1vh;
+    overflow: hidden;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /*Align items to the start*/
+
+}
+
+nav li{
+    padding: 14px 20px;
+
+}
+
+.link {
+    text-decoration: none;
+    padding: 10px;
+    color:white;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.link:hover {
+    background-color: #eadddd;
+    padding: 10px;
+    color: black;
+}

@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import data from './data.json';
+import Scp from './Scp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Nav from './Nav';
+
+function App()
+{
+    return(
+        <Router>
+      <Nav data={data} />
+
+      <Routes>
+        <Route path={"HOME"} element={<Home /> } />
+        {
+          data.map(
+            scp => (
+              <Route key ={scp.Item}
+                path={`${scp.Item}`}
+                element={<Scp scp ={scp} />}
+              />
+            )
+          )
+        }
+      </Routes>
+   </Router>
+    );
 }
-
 export default App;
+
+function Home(){
+
+    return(
+      <div class="container component">
+      <h1>Welcome to Scp website</h1>
+      <p>Use the menu above to navigate the application</p>
+      </div>
+    )
+  
+  }
