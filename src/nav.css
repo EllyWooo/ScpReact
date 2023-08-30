@@ -5,6 +5,7 @@ nav {
     margin-bottom: 1vh;
     overflow: hidden;
     color: azure;
+    
 }
 
 nav ul{
@@ -12,7 +13,7 @@ nav ul{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start; /*Align items to the start*/
+    justify-content: center; /*Align items to the start*/
 
 }
 
