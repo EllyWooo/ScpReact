@@ -14,3 +14,9 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin: 8%;
 }
+
+.box{
+    width: 60%;
+    height: 50%;
+    border: 2px solid rgb(245, 22, 22);
+}
