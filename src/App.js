@@ -34,7 +34,7 @@ function Home(){
       <div class="container component">
       <h1>Welcome to Scp website</h1>
       <img src="images/logo.jpg" alt=""/>
-      
+      <h2>Secure. Contain. Protext.</h2>
       </div>
     )
   

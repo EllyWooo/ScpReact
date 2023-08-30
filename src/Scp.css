@@ -2,6 +2,8 @@
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(189, 182, 182);
+    text-align: center;
+    align-items: center;
 }   
 
 .container {
