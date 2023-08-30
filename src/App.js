@@ -33,7 +33,8 @@ function Home(){
     return(
       <div class="container component">
       <h1>Welcome to Scp website</h1>
-      <p>Use the menu above to navigate the application</p>
+      <img src="images/logo.jpg" alt=""/>
+      
       </div>
     )
   
